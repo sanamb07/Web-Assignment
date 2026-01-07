@@ -238,8 +238,8 @@ textarea{ min-height:160px; resize:vertical; }
 /* FOOTER */
 .footer{
   padding:18px 0 26px;
-  background: rgba(0,0,0,0.88);
-  border-top:1px solid rgba(255,255,255,0.10);
+  background: rgba(11, 13, 46, 0.88);
+  border-top:1px solid rgba(10, 244, 18, 0.1);
   text-align:center;
   color:rgba(255,255,255,0.72);
   font-weight:650;
@@ -270,7 +270,7 @@ textarea{ min-height:160px; resize:vertical; }
   border: 0;
 }
 
-/* ===== Reviews Section (Home) ===== */
+/*Reviews Section*/
 .reviews{
   padding: 44px 0 34px;
   background: linear-gradient(180deg, rgba(231, 8, 8, 0.12), rgba(0,0,0,0.90));
