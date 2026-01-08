@@ -6,13 +6,26 @@
   <title>Home | Sanam Bhatta</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
+<!-- HERO -->
 <header class="bg-home">
   <div class="topbar">
     <div class="container topbar-inner">
-      <div class="brand">Sanam <span class="accent">Bhatta</span></div>
 
+      <!-- Brand -->
+      <div class="brand">
+        Sanam <span class="accent">Bhatta</span>
+      </div>
+
+      <!-- Mobile menu checkbox -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+      <!-- Mobile menu button -->
+      <label for="menu-toggle" class="menu-btn">☰ Menu</label>
+
+      <!-- Navigation -->
       <nav class="nav" aria-label="Primary navigation">
         <a class="active" href="index.html">Home</a>
         <a href="projects.html">Projects</a>
@@ -20,46 +33,56 @@
         <a href="sitereport.html">Site Report</a>
       </nav>
 
+      <!-- Contact button -->
       <a class="contact-btn" href="contact.html">Contact</a>
+
     </div>
   </div>
 
+  <!-- Hero Content -->
   <div class="container hero-wrap">
-    <p class="tagline">I <span class="hl">Take</span> and I <span class="hl">Make</span></p>
+    <p class="tagline">
+      We <span class="hl">Take</span> and We <span class="hl">Make</span>
+    </p>
+
     <h1 class="hero-title">Sanam Bhatta</h1>
+
     <p class="hero-subtitle">
-      I am a student doing BSc (Hons) in Computer Science. I am a Web Developer and Web Designer.
+      I am a student doing BSc (Hons) in Computer Science.
+      I am a Web Developer and Web Designer.
     </p>
   </div>
 </header>
 
-<!-- Reviews Section -->
+<!-- REVIEWS SECTION -->
 <section class="reviews">
   <div class="container">
+
     <h2 class="reviews-title">What People Say</h2>
     <p class="reviews-subtitle">
-      Reviews from clients and classmates about my website design & development work.
+      Reviews from clients, classmates, and reviewers about my website design and development work.
     </p>
 
     <div class="reviews-grid">
+
       <article class="review-card">
-        <p class="review-text">“Sanam delivered a clean, modern portfolio site with great spacing and layout. The design looks professional and loads fast.”</p>
+        <p class="review-text">“Sanam built a clean and professional website. The layout is modern and easy to navigate.”</p>
         <div class="review-meta">
           <div class="avatar">A</div>
           <div>
             <strong>Aarav K.</strong>
-            <div class="role">Student • Client</div>
+            <div class="role">Client</div>
           </div>
           <div class="stars">★★★★★</div>
         </div>
       </article>
 
       <article class="review-card">
-        <p class="review-text">“Really impressed by the responsive layout. Works smoothly on mobile and desktop, and the navigation is easy to use.”</p>
+        <p class="review-text">“The responsive design works perfectly on mobile and desktop. Very well structured.”</p>
         <div class="review-meta">
           <div class="avatar">S</div>
           <div>
-            <strong>Aryan P.</strong>
+            <strong>Sophia M.</strong>
             <div class="role">Classmate</div>
           </div>
           <div class="stars">★★★★★</div>
@@ -67,7 +90,7 @@
       </article>
 
       <article class="review-card">
-        <p class="review-text">“Sanam explained everything clearly and made small changes quickly. Great communication and clean code.”</p>
+        <p class="review-text">“Sanam communicates clearly and delivers work on time. The design feels premium.”</p>
         <div class="review-meta">
           <div class="avatar">R</div>
           <div>
@@ -79,7 +102,7 @@
       </article>
 
       <article class="review-card">
-        <p class="review-text">“The UI looks premium and well structured. The spacing, typography and colours feel modern.”</p>
+        <p class="review-text">“Excellent use of spacing, typography, and colour. The site looks very professional.”</p>
         <div class="review-meta">
           <div class="avatar">N</div>
           <div>
@@ -91,11 +114,11 @@
       </article>
 
       <article class="review-card">
-        <p class="review-text">“Fast and reliable. The website is lightweight and loads quickly even with a large hero background.”</p>
+        <p class="review-text">“The website loads fast and feels lightweight even with a large hero image.”</p>
         <div class="review-meta">
           <div class="avatar">J</div>
           <div>
-            <strong>Oli L.</strong>
+            <strong>Jaden L.</strong>
             <div class="role">Small Business Owner</div>
           </div>
           <div class="stars">★★★★★</div>
@@ -103,11 +126,11 @@
       </article>
 
       <article class="review-card">
-        <p class="review-text">“Sanam’s layout design is strong — consistent navbar, clean sections, and a professional look.”</p>
+        <p class="review-text">“Very clean code and consistent layout across all pages. Great student project.”</p>
         <div class="review-meta">
           <div class="avatar">M</div>
           <div>
-            <strong>Ankit S..</strong>
+            <strong>Maya S.</strong>
             <div class="role">Classmate</div>
           </div>
           <div class="stars">★★★★★</div>
@@ -115,7 +138,7 @@
       </article>
 
       <article class="review-card">
-        <p class="review-text">“The project templates section is a nice touch and the cards look polished with the transparent design.”</p>
+        <p class="review-text">“The project templates section is well designed and visually appealing.”</p>
         <div class="review-meta">
           <div class="avatar">T</div>
           <div>
@@ -127,44 +150,49 @@
       </article>
 
       <article class="review-card">
-        <p class="review-text">“Great attention to detail. Buttons, hover effects, and readability are all well done.”</p>
+        <p class="review-text">“Nice hover effects and a smooth user experience. Looks professional.”</p>
         <div class="review-meta">
           <div class="avatar">L</div>
           <div>
-            <strong>Muna B.</strong>
+            <strong>Luna B.</strong>
             <div class="role">Client</div>
           </div>
-          <div class="stars">★★★★</div>
+          <div class="stars">★★★★★</div>
         </div>
       </article>
 
       <article class="review-card">
-        <p class="review-text">“Sanam created a professional portfolio that feels modern. Everything is simple but effective.”</p>
+        <p class="review-text">“Strong use of semantic HTML and responsive layout. Well done.”</p>
         <div class="review-meta">
           <div class="avatar">K</div>
           <div>
             <strong>Kiran D.</strong>
             <div class="role">Tutor Feedback</div>
           </div>
-          <div class="stars">★★★★</div>
+          <div class="stars">★★★★★</div>
         </div>
       </article>
 
       <article class="review-card">
-        <p class="review-text">“One of the cleanest student websites I’ve seen — strong structure, semantic HTML, and good design choices.”</p>
+        <p class="review-text">“One of the cleanest portfolio websites I’ve seen from a student.”</p>
         <div class="review-meta">
           <div class="avatar">E</div>
           <div>
-            <strong>Uma W.</strong>
+            <strong>Emily W.</strong>
             <div class="role">Reviewer</div>
           </div>
-          <div class="stars">★★★★</div>
+          <div class="stars">★★★★★</div>
         </div>
       </article>
+
     </div>
   </div>
 </section>
 
-<footer class="footer">Made by Sanam Bhatta</footer>
+<!-- FOOTER -->
+<footer class="footer">
+  Made by Sanam Bhatta
+</footer>
+
 </body>
 </html>
