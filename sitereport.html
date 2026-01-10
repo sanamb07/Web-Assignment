@@ -13,12 +13,17 @@
     <div class="container topbar-inner">
       <div class="brand">Sanam <span class="accent">Bhatta</span></div>
 
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="video.html">Video Demo</a>
-        <a class="active" href="sitereport.html">Site Report</a>
-      </nav>
+      <!-- Mobile menu toggle -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-btn">☰ Menu</label>
+
+      <nav class="nav">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="video.html">Video Demo</a>
+  <a class="active" href="sitereport.html">Site Report</a>
+</nav>
+
 
       <a class="contact-btn" href="contact.html">Contact</a>
     </div>
@@ -28,14 +33,223 @@
 <main class="main">
   <div class="container">
     <div class="panel">
-      <h1 class="h1">Site Report</h1>
-      <p class="p">
-       This website was created as part of my TCA I web development assignment. 
-       The goal of this project was to design and build a multi-page website using only HTML and CSS, while following proper web standards, semantic structure, and responsive design principles. 
-       The website represents me as a student and aspiring web developer and includes the required pages: Home, Projects, Contact, Video Demo, and Site Report.
-      </p>
 
-      <hr class="hr" />
+      <h1 class="h1">Site Report</h1>
+
+      <hr class="hr">
+
+      <section>
+        <h2 class="h1">Introduction</h2>
+        <p class="p">
+          The site was created as a web development assignment in the first TCA.
+          The overall objective of the project was to create and develop a
+          full-fledged, multi-page website using only HTML and CSS.
+          The site serves as a personal portfolio and demonstrates my knowledge
+          of basic web development principles such as semantic HTML, layout
+          design, responsive design, and version control using GitHub.
+        </p>
+        <p class="p">
+          The website includes all the required pages mentioned in the assignment
+          brief: Home, Projects, Contact, Video Demo, and Site Report.
+          Each page has a clear purpose and follows a consistent visual design.
+          This project helped me understand how professional websites are structured
+          and how design and usability play an important role in web development.
+        </p>
+      </section>
+
+      <hr class="hr">
+
+      <section>
+        <h2 class="h1">Planning and Structure</h2>
+        <p class="p">
+          Before starting the development, I carefully reviewed the assignment
+          requirements and planned the overall structure of the website.
+          I decided to keep the navigation consistent across all pages so users
+          could move easily between sections.
+        </p>
+
+        <p class="p">The general structure of each page follows this layout:</p>
+        <ul class="p">
+          <li>Header with navigation</li>
+          <li>Main content area</li>
+          <li>Footer</li>
+        </ul>
+
+        <p class="p">
+          Semantic HTML elements such as
+          <code>&lt;header&gt;</code>,
+          <code>&lt;nav&gt;</code>,
+          <code>&lt;main&gt;</code>,
+          <code>&lt;section&gt;</code>,
+          <code>&lt;article&gt;</code>, and
+          <code>&lt;footer&gt;</code>
+          were used to improve accessibility, readability, and maintainability.
+          This follows the best practices taught during the module.
+        </p>
+
+        <p class="p">
+          The Home page introduces me and the purpose of the website.
+          The Projects page lists my areas of interest and includes project templates.
+          The Video Demo page contains an embedded video demonstration of the website,
+          while the Site Report page documents the development process and reflections.
+        </p>
+      </section>
+
+      <hr class="hr">
+
+      <section>
+        <h2 class="h1">Design Choices</h2>
+        <p class="p">
+          The website was designed to be clean, modern, and professional.
+          I aimed to keep the layout spacious and easy to read rather than crowded.
+          The Home page features a large hero section with a background image
+          to immediately attract the user’s attention.
+        </p>
+
+        <p class="p">
+          The tagline “We Take and We Make” was kept simple and visually emphasized
+          to match the overall theme of the site.
+          Consistent typography, spacing, and colours were used across all pages.
+          A green accent colour highlights buttons, links, and interactive elements
+          to give the site a fresh and modern appearance.
+        </p>
+
+        <p class="p">
+          Transparent, glass-style cards were used in sections such as Projects
+          and Reviews to add visual depth while maintaining a minimal design.
+          Hover effects were implemented using CSS only, enhancing user interaction
+          without relying on animations or JavaScript.
+        </p>
+      </section>
+
+      <hr class="hr">
+
+      <section>
+        <h2 class="h1">Responsive Design</h2>
+        <p class="p">
+          Responsiveness was a key focus of this project.
+          The website is designed to work well on desktop, tablet, and mobile devices.
+          CSS media queries, Grid, and Flexbox were used to ensure flexible layouts.
+        </p>
+
+        <p class="p">
+          On larger screens, content is displayed in multiple columns,
+          while on smaller screens it automatically stacks into a single column.
+          This ensures readability and prevents layout overflow.
+        </p>
+
+        <p class="p">
+          A CSS-only mobile navigation menu was created using a checkbox and label
+          technique. On smaller screens, navigation links are hidden and replaced
+          with a Menu button. When clicked, the menu expands vertically.
+          This solution avoids JavaScript while still meeting assignment requirements.
+        </p>
+      </section>
+
+      <hr class="hr">
+
+      <section>
+        <h2 class="h1">Projects Section</h2>
+        <p class="p">
+          The Projects page consists of two main parts.
+          The first section lists my interests, including artificial intelligence,
+          machine learning, database management, and networking, using a simple grid layout.
+        </p>
+
+        <p class="p">
+          The second section displays four project templates in a scrollable layout.
+          These templates are transparent, use a green theme, and can be scrolled or
+          swiped on mobile devices. This adds interactivity while using only HTML and CSS.
+          On larger screens, the cards adjust to fill the available space, providing
+          a good user experience.
+        </p>
+      </section>
+
+      <hr class="hr">
+
+      <section>
+        <h2 class="h1">Reviews / Testimonials Section</h2>
+        <p class="p">
+          A Reviews section was added to the Home page to make the website feel
+          more realistic and professional.
+          This section includes testimonial cards written as feedback for a web
+          developer or website designer.
+        </p>
+
+        <p class="p">
+          Each card contains a short review, name, role, and star rating.
+          The reviews are displayed in a responsive grid layout:
+          three columns on desktop, two on tablets, and one on mobile devices.
+          This section improves the visual appeal and demonstrates structured
+          content layout design.
+        </p>
+      </section>
+
+      <hr class="hr">
+
+      <section>
+        <h2 class="h1">Contact Page</h2>
+        <p class="p">
+          The Contact page includes a simple form that uses the <code>mailto</code> method.
+          When the form is submitted, the user’s default email application opens
+          with the form data included.
+        </p>
+
+        <p class="p">
+          This approach was chosen because server-side scripting is outside the
+          scope of this module. The form uses proper labels and input fields to
+          ensure accessibility and usability, and the design remains consistent
+          with the rest of the website.
+        </p>
+      </section>
+
+      <hr class="hr">
+
+      <section>
+        <h2 class="h1">Video Demonstration</h2>
+        <p class="p">
+          The Video Demo page contains an embedded video using an <code>&lt;iframe&gt;</code>.
+          The video demonstrates the website’s navigation, features, and responsiveness.
+          Embedding the video directly allows it to play within the site instead
+          of redirecting users to an external platform.
+        </p>
+      </section>
+
+      <hr class="hr">
+
+      <section>
+        <h2 class="h1">Validation and Testing</h2>
+        <p class="p">
+          All HTML and CSS files were validated using online validation tools to
+          ensure there were no major syntax errors.
+          Minor warnings were reviewed and corrected where necessary.
+          Validation screenshots are included in this Site Report as required.
+        </p>
+
+        <p class="p">
+          The website was tested on different screen sizes using browser developer tools.
+          Navigation links, forms, and interactive elements were checked to ensure
+          they function correctly.
+        </p>
+      </section>
+
+      <hr class="hr">
+
+      <section>
+        <h2 class="h1">Version Control and GitHub</h2>
+        <p class="p">
+          GitHub was used throughout the development process for version control.
+          Regular commits were made with clear messages describing updates such as
+          layout improvements, responsiveness fixes, and content additions.
+          This demonstrates good development practice and provides evidence of
+          continuous progress.
+        </p>
+      </section>
+
+    </div>
+  </div>
+</main>
+
 
       <div class="video-box">
   <iframe

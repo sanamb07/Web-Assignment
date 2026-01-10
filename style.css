@@ -29,12 +29,20 @@ a{ color:inherit; text-decoration:none; }
 
 /*Top Bar */
 .topbar{
-  position:absolute;
-  left:0; right:0; top:0;
-  z-index:10;
-  padding:18px 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0));
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+
+  padding: 28px 0 22px; 
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0)
+  );
 }
+
 
 .topbar-inner{
   display:flex;
@@ -94,22 +102,31 @@ a{ color:inherit; text-decoration:none; }
   position:relative;
   background-image:
     linear-gradient(90deg, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.35) 48%, rgba(0,0,0,0.50) 100%),
-    url("https://upload.wikimedia.org/wikipedia/commons/e/e7/Real_Madrid_C.F._the_Winner_Of_The_Champions_League_in_2018_%281%29.jpg");
+    url("images/background.jpg");
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
 }
 
+/* PAGE HEADER BACKGROUND */
 .bg-page{
-  min-height:320px;
-  position:relative;
+  min-height: 55vh;           
+  position: relative;
+  background-color: #000;
+
   background-image:
-    linear-gradient(90deg, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.45) 60%, rgba(0,0,0,0.60) 100%),
-    url("https://upload.wikimedia.org/wikipedia/commons/e/e7/Real_Madrid_C.F._the_Winner_Of_The_Champions_League_in_2018_%281%29.jpg");
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
+    linear-gradient(180deg,
+      rgba(0,0,0,0.55) 0%,
+      rgba(0,0,0,0.35) 60%,
+      rgba(0,0,0,0.75) 100%
+    ),
+    url("./images/background.jpg");
+
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
+
 
 /* HOME HERO TEXT */
 .hero-wrap{
@@ -130,7 +147,7 @@ a{ color:inherit; text-decoration:none; }
 .hero-title{
   margin:6px 0 12px;
   font-size:clamp(44px, 5.2vw, 82px);
-  font-weight:900;
+  font-weight:700;
   line-height:1.03;
 }
 
@@ -394,3 +411,143 @@ textarea{ min-height:160px; resize:vertical; }
     align-items:flex-start;
   }
 }
+
+@media (max-width: 650px){
+  .reviews-grid{ grid-template-columns: 1fr; }
+}
+.menu-toggle{
+  position:absolute;
+  left:-9999px;
+}
+
+.menu-btn{
+  display:none;
+  padding:10px 14px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,0.55);
+  background:rgba(255,255,255,0.08);
+  font-weight:850;
+  cursor:pointer;
+}
+
+@media (max-width:850px){
+  .nav{
+    display:none;
+    width:100%;
+    margin-top:12px;
+    padding:12px;
+    border-radius:16px;
+    background:rgba(0,0,0,0.55);
+  }
+
+  .menu-btn{
+    display:inline-block;
+  }
+
+  .topbar-inner{
+    flex-wrap:wrap;
+  }
+
+  .menu-toggle:checked ~ .nav{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:flex-start;
+  }
+}
+
+/* MOBILE RESPONSIVENESS */
+
+
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+@media (max-width: 650px){
+  .panel{
+    padding: 14px;
+  }
+
+  .h1{
+    font-size: 34px;
+  }
+
+  .p{
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 650px){
+  .bg-home{
+    min-height: 92vh;
+  }
+
+  .bg-page{
+    min-height: 42vh;
+  }
+
+  .hero-wrap{
+    padding: 120px 0 60px;
+  }
+
+  .hero-subtitle{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 850px){
+  .topbar-inner{
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  
+  .brand{
+    width: 100%;
+  }
+
+  
+  .contact-btn{
+    padding: 10px 16px;
+  }
+}
+
+
+@media (max-width: 650px){
+  .form{
+    width: 100%;
+  }
+
+  input, textarea{
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+
+  .card{
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 650px){
+  .video-box{
+    max-width: 100%;
+    border-radius: 14px;
+  }
+}
+
