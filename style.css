@@ -550,7 +550,7 @@ img{
     border-radius: 14px;
   }
 }
-/* Validation Screenshots - BIG & CLEAN */
+/* Validation Screenshots */
 .validation-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 per row */
